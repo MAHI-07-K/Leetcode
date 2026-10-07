@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<vector<int>>res;
-    void find(vector<int>temp,int i,int sum,vector<int>&candidates,int target){
+    void find(vector<int>&temp,int i,int sum,vector<int>&candidates,int target){
         if(sum==target){res.push_back(temp);}
         for(i;i<candidates.size()&&sum+candidates[i]<=target;i++){
             temp.push_back(candidates[i]);
